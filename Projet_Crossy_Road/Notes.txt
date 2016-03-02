@@ -1,0 +1,36 @@
+
+
+
+#Obstacle
+-> ObstacleStatic()
+-> ObstacleMobile (vitesse)
+
+#Surface()
+-> Bandes
+  -> Sol (epaisseur)
+    -> Eau
+      -> Mobile (vitesse)
+        -> Crocodiles
+        -> Rondins
+    -> Route
+    -> Herbe
+
+Obstacle
+int longeur
+
+ObstacleMobile
+float vitesse
++bouger()
+
+Surface
+
+
+Bandes
+
+GreenFoot
+
+if(Greenfoot.isKeyDown("up")){
+
+}
+
+Greenfoot.playSound("Rocket_Side.wav");
