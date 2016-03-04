@@ -8,12 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Obstacle extends Objet
 {
-    /**
-     * Act - do whatever the Obstacle wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+    private double h,v;
+    public Obstacle()
     {
-        // Add your action code here.
-    }    
+        h=0;
+        v=0;
+    }
+    public final void setMoveData(int direction, int speed){
+        double angle = Math.toRadians(direction);
+        h = Math.cos(angle) * (double)speed;
+        v = Math.sin(angle) * (double)speed;
+    }
+    public final void move()
+    {
+        setLocation((int)Math.round(getX()+h), (int)Math.round(getY() + v));
+    }
 }

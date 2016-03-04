@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Turret
+comment0.text=\r\n\ This\ class\ defines\ methods\ for\ the\ player-controlled\ turret\r\n\ that\ shoots\ bullets\r\n\ \r\n\ @author\ (James\ Thompson)\r\n\ @version\ (1.0)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Turret\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ checkInput()
+comment2.text=\r\n\ This\ method\ checks\ for\ any\ user\ input\ and\ applys\ any\ necessary\ changes\r\n
+comment3.params=
+comment3.target=void\ shoot()
+comment3.text=\r\n\ This\ method\ shoots\ a\ bullet\r\n
+numComments=4

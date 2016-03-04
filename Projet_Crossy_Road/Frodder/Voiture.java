@@ -8,12 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Voiture extends Obstacle
 {
-    /**
+        private Bande bande;
+        private int SPEED;
+        /**
      * Act - do whatever the Voiture wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Voiture(Bande bande){
+        this.bande = bande;
+        this.SPEED = 1;
+        super.setMoveData(0,1);
+    }
+   
     public void act() 
     {
-        // Add your action code here.
+        super.move();
+        if (getX()==60){
+           getWorld().removeObject(this);
+        }
+
     }    
 }

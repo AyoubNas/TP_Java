@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=AudioManager
+comment0.text=\r\n\ Audioplayer\ plays\ midi\ files.\r\n\ \r\n\ @author\ James\ Thompson\ <i>(original\:\ Anthony\ Hoang)\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=fileName
+comment2.target=void\ load(java.lang.String)
+comment2.text=\r\n\ Load\ a\ new\ file.\r\n\ \r\n\ @param\ fileName\ the\ name\ of\ the\ file.\ (requires\ folderName/fileName.mid).\r\n
+comment3.params=
+comment3.target=void\ start()
+comment3.text=\r\n\ Start\ the\ loaded\ file\r\n
+comment4.params=
+comment4.target=void\ stop()
+comment4.text=\r\n\ Stop\ the\ loaded\ file\r\n
+comment5.params=fileName
+comment5.target=void\ playOnce(java.lang.String)
+comment5.text=\r\n\ Just\ calls\ greenfoot's\ playsound\r\n
+numComments=6

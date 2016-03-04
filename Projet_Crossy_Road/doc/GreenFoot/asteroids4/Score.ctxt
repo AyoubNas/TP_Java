@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Score
+comment0.text=\r\n\ Writes\ the\ score\ as\ text\ to\ the\ screen\r\n\ \r\n\ @author\ James\ Thompson\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Score()
+comment2.params=value
+comment2.target=void\ updateText(int)
+comment2.text=\r\n\ Update\ the\ score\ by\ a\ given\ ammount\r\n\ @param\ value\ The\ ammount\ to\ add\ to\ the\ score\r\n
+numComments=3
