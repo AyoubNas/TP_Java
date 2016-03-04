@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ScrollWorld
+comment0.text=\r\n\ The\ ScrollWorld\ is\ used\ to\ construct\ the\ environment.\ \r\n\ It\ creates\ the\ moving\ space,\ the\ space\ ship,\ the\ asteroids\r\n\ and\ the\ explosion\r\n\ @author\ Zovisk\ Zonk\ (Some\ code\ from\ the\ ScrollWorld\ \r\n\ project\ at\ the\ Greenfoot\ gallery)\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=ScrollWorld()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\ \r\n\ Constructs\ the\ initial\ scenario\ and\ the\ functioning\ of\ the\ game.\ \r\n
+comment3.params=position
+comment3.target=void\ paint(int)
+comment3.text=\ \r\n\ Paint\ scrolling\ image\ at\ given\ position\ and\ make\ sure\ the\ rest\ of\ \r\n\ the\ background\ is\ also\ painted\ with\ the\ same\ image.\ \r\n
+comment4.params=width\ height
+comment4.target=greenfoot.GreenfootImage\ getScrollingImage(int,\ int)
+comment4.text=\ \r\n\ Returns\ an\ image\ with\ the\ given\ dimensions.\ \r\n
+comment5.params=
+comment5.target=void\ spaceShipExplodes()
+comment5.text=\ \r\n\ Adds\ the\ object\ Explosion\ at\ the\ Spaceship\ coordinates\r\n
+comment6.params=
+comment6.target=void\ gameOver()
+comment6.text=\ \r\n\ Adds\ the\ GameOver\ object\ and\ terminates\ the\ game\r\n
+numComments=7

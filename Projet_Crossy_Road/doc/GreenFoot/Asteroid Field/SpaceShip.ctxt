@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SpaceShip
+comment0.text=\ \r\n\ @author\ Zovisk\ Zonk\ (Some\ code\ from\ the\ ScrollWorld\ \r\n\ project\ at\ the\ Greenfoot\ gallery)\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\ \r\n\ Controls\ the\ direction\ of\ the\ SpaceShip\ and\ plays\ the\ corresponding\ \r\n\ sound\ based\ on\ the\ number\ of\ acts.\ The\ game\ gets\ very\ slow\ if\ the\ \r\n\ sound\ is\ played\ at\ every\ act.\r\n
+comment2.params=
+comment2.target=boolean\ hitAsteroid()
+comment2.text=\ \r\n\ Checks\ if\ the\ SpaceShip\ has\ hit\ the\ Asteroid\r\n
+numComments=3
