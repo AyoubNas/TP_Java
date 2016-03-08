@@ -23,9 +23,16 @@ public class Voiture extends Obstacle
     public void act() 
     {
         super.move();
-        if (getX()==60){
-           getWorld().removeObject(this);
+        if (getX()==59){
+           setLocation(0,this.bande.getY());
         }
+        hitSomething();
 
-    }    
+    }
+    
+    public final void hitSomething(){
+        if (getOneIntersectingObject(Personnage.class) != null){
+            Greenfoot.stop();
+        }
+    }
 }

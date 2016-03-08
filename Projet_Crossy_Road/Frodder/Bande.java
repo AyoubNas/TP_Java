@@ -16,10 +16,10 @@ public class Bande extends Actor
      * Constructor for objects of class Bande.
      * 
      */
-    public Bande(int y)
+    public Bande(Surface surface, int y)
     {    
         this.y = y;
-        this.surface = new Route();
+        this.surface = surface;
         GreenfootImage texture = this.surface.getImage();
         texture.scale(650,50);
         setImage(texture);
@@ -32,6 +32,14 @@ public class Bande extends Actor
     public int getY()
     {
         return this.y;
+    }
+    
+    
+    public void addVoiture(){
+        if (this.surface instanceof Route){
+            Voiture voiture = new Voiture(this);
+            getWorld().addObject(voiture,0,this.getY());
+        }
     }
     
     public void act()

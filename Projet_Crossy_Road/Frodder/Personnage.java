@@ -17,29 +17,37 @@ public class Personnage extends Actor
      */
     public void act() 
     {
-        if (Greenfoot.isKeyDown("up") ) {
+        String key = Greenfoot.getKey();
+        if ("up".equals(key)) {
             // Changer de bande
-            setLocation(getX(), getY() - 1);
+            setLocation(getX(), getY() - 7);
             Greenfoot.playSound("frogs.wav");
         }
-        if (Greenfoot.isKeyDown("down") ) {
+        if ("down".equals(key)) {
             // Changer de bande
-            setLocation(getX(), getY() + 1);
+            setLocation(getX(), getY() + 7);
             Greenfoot.playSound("frogs.wav");
         }
-        if (Greenfoot.isKeyDown("right") ) {
+        if ("right".equals(key)) {
             // Changer de bande
-            setLocation(getX()+1, getY());
-            this.x = x + 1;
+            setLocation(getX()+7, getY());
+  
             Greenfoot.playSound("frogs.wav");
         }
-        if (Greenfoot.isKeyDown("left") ) {
+        if ("left".equals(key)) {
             // Changer de bande
-            setLocation(getX()-1, getY());
-            this.x = x - 1;
+            setLocation(getX()-7, getY());
+  
             Greenfoot.playSound("frogs.wav");
+        }
+        if (isOffWorld()){
+            setLocation(30,60);
         }
         
-        
-    }    
+    }   
+    
+    public final boolean isOffWorld() 
+    {
+        return ( (getY() <= 1) );
+    }
 }

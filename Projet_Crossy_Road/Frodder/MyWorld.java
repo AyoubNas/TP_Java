@@ -24,23 +24,45 @@ public class MyWorld extends World
         maxX = 60;
         maxY = 40;
         
+        initWorld();
         personnage = new Personnage();
         addObject (personnage, 30, 40);
-        bande = new Bande(2);
-        addObject(bande,30,bande.getY());
-        voiture = new Voiture(this.bande);
-        addObject(voiture,0,this.bande.getY());
         
-
+        GreenfootSound backgroundMusic = new GreenfootSound("background.mp3");
+        backgroundMusic.playLoop();
         
     }
+    
+    public void initWorld(){
+        createBande(new Route(), 2);
+        createBande(new Herbe(), 7);
+        createBande(new Herbe(), 12);
+        createBande(new Route(), 17);
+        createBande(new Herbe(), 22);
+        createBande(new Herbe(), 27);
+        createBande(new Route(), 32);
+        createBande(new Herbe(), 37);
+    }
+    public void hasWin(){
+        if ( this.personnage.getY() == 2 ){
+            this.personnage.setLocation(30,0);
+        }
+    }
+    
+    public void createBande(Surface texture, int y){
+        bande = new Bande(texture, y);
+        addObject(bande,30,bande.getY());
+        if (texture instanceof Route){
+            bande.addVoiture();
+        }
+
+    }
+    
+
     
     public int getMaxX(){
         return this.maxX;
     }
     
-    public void act()
-    {
-        
-    }
+
 }
