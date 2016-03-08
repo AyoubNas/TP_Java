@@ -20,32 +20,39 @@ public class Personnage extends Actor
         String key = Greenfoot.getKey();
         if ("up".equals(key)) {
             // Changer de bande
+            playSound();
             setLocation(getX(), getY() - 7);
-            Greenfoot.playSound("frogs.wav");
+            
         }
         if ("down".equals(key)) {
             // Changer de bande
+            playSound();
             setLocation(getX(), getY() + 7);
-            Greenfoot.playSound("frogs.wav");
+            
         }
         if ("right".equals(key)) {
             // Changer de bande
+            playSound();
             setLocation(getX()+7, getY());
   
-            Greenfoot.playSound("frogs.wav");
+            
         }
         if ("left".equals(key)) {
             // Changer de bande
+            playSound();
             setLocation(getX()-7, getY());
   
-            Greenfoot.playSound("frogs.wav");
+            
         }
         if (isOffWorld()){
+            Greenfoot.playSound("win.wav");
             setLocation(30,60);
         }
         
     }   
-    
+    public void playSound(){
+        Greenfoot.playSound("frog2.wav");
+    }
     public final boolean isOffWorld() 
     {
         return ( (getY() <= 1) );

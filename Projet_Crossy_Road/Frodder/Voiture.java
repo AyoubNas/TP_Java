@@ -24,6 +24,7 @@ public class Voiture extends Obstacle
     {
         super.move();
         if (getX()==59){
+           
            setLocation(0,this.bande.getY());
         }
         hitSomething();
@@ -32,6 +33,7 @@ public class Voiture extends Obstacle
     
     public final void hitSomething(){
         if (getOneIntersectingObject(Personnage.class) != null){
+            Greenfoot.playSound("death.wav");
             Greenfoot.stop();
         }
     }
